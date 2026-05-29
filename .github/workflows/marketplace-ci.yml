@@ -1,0 +1,17 @@
+name: marketplace-ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate marketplace.json
+        run: |
+          jq -e '.name == "sisyphuslabs"' .claude-plugin/marketplace.json
+      - name: Validate plugin.json
+        run: |
+          jq -e '.name == "omo"' plugins/omo/.claude-plugin/plugin.json

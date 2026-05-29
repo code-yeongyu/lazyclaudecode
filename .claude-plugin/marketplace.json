@@ -1,0 +1,17 @@
+{
+  "name": "sisyphuslabs",
+  "owner": {
+    "name": "Yeongyu Kim",
+    "url": "https://github.com/code-yeongyu"
+  },
+  "description": "Sisyphus Labs marketplace for omo — local Claude Code components (rules, comment-checker, LSP, ultrawork, ultragoal, start-work continuation, telemetry) plus bundled ast-grep and LSP MCP servers.",
+  "plugins": [
+    {
+      "name": "omo",
+      "source": "./plugins/omo",
+      "description": "One Claude Code plugin namespace for Yeongyu's local Claude Code components.",
+      "version": "0.1.0",
+      "category": "Developer Tools"
+    }
+  ]
+}
