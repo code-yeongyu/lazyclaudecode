@@ -1,6 +1,7 @@
 .omo/
 node_modules/
-dist/
+# NOTE: no global `dist/` ignore — this is a distribution repo; the published
+# plugin under plugins/omo/ ships its built dist/ (the runtime deliverable).
 .env
 .env.*
 *.tgz

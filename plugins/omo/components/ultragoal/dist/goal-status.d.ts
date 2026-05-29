@@ -1,0 +1,10 @@
+import type { UltragoalGoalMode, UltragoalItem, UltragoalPlan, UltragoalSuccessCriterion } from "./types.js";
+export declare const ULTRAGOAL_AGGREGATE_OBJECTIVE: string;
+export declare function goalMode(plan: UltragoalPlan): UltragoalGoalMode;
+export declare function isUltragoalDone(plan: UltragoalPlan): boolean;
+export declare function isFinalRunCompletionCandidate(plan: UltragoalPlan, goal: UltragoalItem): boolean;
+export declare function aggregateObjective(plan: UltragoalPlan): string;
+export declare function expectedObjective(plan: UltragoalPlan, goal: UltragoalItem): string;
+export declare function compatibleObjectives(plan: UltragoalPlan): readonly string[];
+export declare function hasAllCriteriaPass(goal: UltragoalItem): boolean;
+export declare function firstUnresolvedCriterion(goal: UltragoalItem): UltragoalSuccessCriterion | undefined;
